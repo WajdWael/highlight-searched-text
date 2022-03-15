@@ -1,0 +1,100 @@
+/* ==== GOOGLE FONTS ==== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+/* ==== VARIABLES CSS ==== */
+:root {
+  /* ==== COLORS ==== */
+  --first-clr: #12192c;
+  --dark-clr: #201d2e;
+
+  /* ==== FONT AND TYPOGRAPHY ==== */
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 3rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.625rem;
+
+  /* ==== FONT WEIGHT ==== */
+  --font-medium: 500;
+
+  /* ==== MARGENES BOTTOM ==== */
+  --mb-0-25: 0.25rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2-5: 2.5rem;
+
+  /* ==== Z INDEX ==== */
+  --z-normal: 1;
+  --z-tooltip: 10;
+}
+/* ==== MEDIA ==== */
+@media (min-width: 968px) {
+  :root {
+    --biggest-font-size: 3.5rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+    --tiny-font-size: 0.75rem;
+  }
+}
+/* ===== BASE ===== */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  color: var(--first-clr);
+}
+h1 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*  ==== HIGHLIGHT SEARCHED TEXT  ====  */
+.sc-2 {
+  height: 100vh;
+  position: relative;
+}
+.container-high {
+  padding-top: 20pc;
+  padding: 3.125rem 2.5rem; /* 50px 40px */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 87%;
+  max-width: 660px;
+  border-radius: 5px;
+  box-shadow: 0 20px 35px rgba(60, 60, 60, 0.2);
+}
+.wrapper-high {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-high input {
+  width: 60%;
+  padding: 0.625rem 0.438rem;
+  border-radius: 3px;
+  border: 1px solid var(--dark-clr);
+}
+.wrapper-high button {
+  width: 30%;
+  background-color: var(--dark-clr);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+#pargarph {
+  line-height: 2;
+  text-align: justify;
+  margin-top: 2rem;
+  color: var(--dark-clr);
+}
